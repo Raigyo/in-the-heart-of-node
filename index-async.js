@@ -1,8 +1,8 @@
 // SYNCHRONOUS / ASYNCHRONOUS
 
-const synchronous = require("./synchronicity/synchronous");
-const asynchronous = require("./synchronicity/asynchronous_1");
-const promises = require("./synchronicity/promises");
+const synchronous = require("./scripts/synchronicity/synchronous");
+const asynchronous = require("./scripts/synchronicity/asynchronous_1");
+const promises = require("./scripts/synchronicity/promises");
 
 // Variables scope
 console.log("----------");
