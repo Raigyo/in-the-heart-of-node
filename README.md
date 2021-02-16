@@ -4,5 +4,5 @@
 
 > 🔨 From udemy '[Au coeur de Node](https://www.udemy.com/course/nodejs-api-rest/)'. Demo on [Heroku](#online-versions).
 
-![Node Logo](_readme-img/nodejs-logo.png)
+![Node Logo](_readme-img/node-js-logo.png)
 
