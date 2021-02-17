@@ -51,6 +51,28 @@ index-emitter.js
 - Handler using class that inherits emitter
 - Functions that return an event emitter
 
+## STREAMS
+
+Streams are one of the fundamental concepts that power Node. js applications. They are data-handling method and are used to read or write input into output sequentially. Streams are a way to handle reading/writing files, network communications, or any kind of end-to-end information exchange in an efficient way.
+
+````
+scripts
+-- streams
+---- bigfile.txt
+---- fruits.txt
+index-streams.js
+````
+
+`nodemon index-streams.js`
+
+- Streams
+- Readable stream
+- Writable stream
+- Process object
+
 ## Useful links
 - [The Node.js Event Loop, Timers, and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
 - [Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)
+- [Node.js Documentation - Streams](https://nodejs.org/api/stream.html)
+- [Understanding Streams in Node.js](https://nodesource.com/blog/understanding-streams-in-nodejs/)
+- [Node.js file streams explained!](https://areknawo.com/node-js-file-streams-explained/)

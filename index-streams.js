@@ -7,7 +7,7 @@
 const { createReadStream, createWriteStream } = require("fs");
 
 // Readable stream
-const readable = createReadStream("./fruits.txt");
+const readable = createReadStream("./scripts/streams/fruits.txt");
 // event emitter listen to event data (provided by stream)
 readable.on("data", (chunk) => {
   // console.log(chunk); // return buffer
@@ -20,8 +20,8 @@ readable.on("end", () => {
 
 // Writable stream
 
-const readStream = createReadStream("./fruits.txt");
-const writeStream = createWriteStream("./fruits_copy.txt");
+const readStream = createReadStream("./scripts/streams/fruits.txt");
+const writeStream = createWriteStream("./scripts/streams/fruits_copy.txt");
 
 // we read the content of a file, create a file and copy the content in it
 readStream.on("data", (chunk) => {
@@ -40,7 +40,7 @@ readStream.on("end", () => {
 });
 
 // Writable stream big file
-const writeStreamBigFile = createWriteStream("./bigfile.txt");
+const writeStreamBigFile = createWriteStream("./scripts/streams/bigfile.txt");
 for (let i = 0; i <= 1e5; i++) {
   writeStreamBigFile.write(`${i} - added content\n`);
 }
@@ -52,9 +52,9 @@ writeStreamBigFile.end(() => {
 // pipe from keyboard (read) to screen (write)
 process.stdin.pipe(process.stdout);
 
-createReadStream("./fruits.txt").pipe(process.stdout);
+createReadStream("./scripts/streams/fruits.txt").pipe(process.stdout);
 
 console.log(process.argv);
 // createReadStream(process.argv[2]).pipe(process.stdout);
 // nodemon streams.js fruits.txt
-// => content of fuits.txt
+// => content of fruits.txt
