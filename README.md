@@ -50,3 +50,7 @@ index-emitter.js
 - Custom events
 - Handler using class that inherits emitter
 - Functions that return an event emitter
+
+## Useful links
+- [The Node.js Event Loop, Timers, and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+- [Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)
