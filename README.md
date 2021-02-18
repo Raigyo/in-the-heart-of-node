@@ -69,6 +69,22 @@ index-streams.js
 - Readable stream
 - Writable stream
 - Process object
+- Pipe
+- Back pressure management (drain, highWaterMark)
+
+## STREAMS WITH CLASSES
+
+````
+scripts
+-- streams
+---- CustomWritable.js
+---- StreamText.js
+index-streams-classes.js
+````
+`nodemon index-streams-classes.js`
+
+- Class heritating from readable
+- Class heritating from writable
 
 ## Useful links
 - [The Node.js Event Loop, Timers, and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
