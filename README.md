@@ -2,7 +2,7 @@
 
 *February 2021*
 
-> 🔨 Node main concepts overview. From udemy '[Au coeur de Node](https://www.udemy.com/course/au-coeur-de-nodejs/)'.
+> 🔨 Node advanced concepts overview. From udemy '[Au coeur de Node](https://www.udemy.com/course/au-coeur-de-nodejs/)'.
 
 ![Node Logo](_readme-img/node-js-logo.jpg)
 
@@ -58,8 +58,11 @@ Streams are one of the fundamental concepts that power Node. js applications. Th
 ````
 scripts
 -- streams
+---- bigfile_copy.txt
 ---- bigfile.txt
 ---- fruits.txt
+---- fruits_copy.txt
+---- fruits_copy2.txt
 index-streams.js
 ````
 
@@ -85,6 +88,27 @@ index-streams-classes.js
 
 - Class heritating from readable
 - Class heritating from writable
+- Using buffers or objects
+
+## DUPLEX STREAMS / TRANSFORM STREAMS
+
+Duplex streams are streams that implement both the Readable and Writable interfaces.
+
+Transform streams are Duplex streams where the output is in some way related to the input. Like all Duplex streams, Transform streams implement both the Readable and Writable interfaces.
+
+````
+scripts
+-- duplex
+---- bigfile.txt
+---- Slugify.js
+index-duplex-streams.js
+````
+
+`nodemon index-duplex-streams.js`
+
+- Duplex streams using transform
+- Duplex streams using passtrough
+- Pipe with net (server with "echo")
 
 ## Useful links
 - [The Node.js Event Loop, Timers, and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
