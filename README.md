@@ -110,6 +110,56 @@ index-duplex-streams.js
 - Duplex streams using passtrough
 - Pipe with net (server with "echo")
 
+## SERVER WITHOUT STREAMS
+
+Exemple with a video server and memory usage test.
+
+````
+scripts
+-- video
+---- sample_1920x1080.mp4
+index-server.js
+````
+
+`nodemon index-server.js`
+
+=> [http://localhost:3000/video](http://localhost:3000/video)
+
+````
+==== route /video start ====
+rss 103.91 Mb
+heapTotal 4.68 Mb
+heapUsed 2.67 Mb
+external 74.09 Mb
+arrayBuffers 72.96 Mb
+==== route /video end ====
+````
+
+## SERVER WITH STREAMS
+
+Exemple with a video server and memory usage test.
+
+````
+scripts
+-- video
+---- sample_1920x1080.mp4
+index-server-stream.js
+````
+
+`nodemon index-server-stream.js`
+
+=> [http://localhost:3000/video](http://localhost:3000/video)
+
+````
+==== Route /video start ====
+rss 51.04 Mb
+heapTotal 4.73 Mb
+heapUsed 3.19 Mb
+external 10.08 Mb
+arrayBuffers 8.95 Mb
+==== Route /video end ====
+````
+
 ## Useful links
 - [The Node.js Event Loop, Timers, and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
 - [Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)
